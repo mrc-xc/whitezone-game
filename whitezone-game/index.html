@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>WHITE ZONE | 狀態拼貼互動</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-title">WHITE ZONE</div>
+      <div class="brand-sub">狀態拼貼互動</div>
+    </div>
+
+    <div class="actions">
+      <button id="btnFront" class="pill">置頂</button>
+      <button id="btnRemove" class="pill">移除</button>
+      <button id="btnClear" class="pill">清空</button>
+      <button id="btnShot" class="pill">截圖</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel">
+      <h2 class="panel-title">狀態模組</h2>
+      <div id="itemsGrid" class="grid"></div>
+      <p class="hint">
+        點選狀態加入畫面。<br/>
+        單指拖曳 / 雙指縮放旋轉（像 IG 貼紙）。
+      </p>
+    </aside>
+
+    <section class="stageWrap">
+      <div class="stageHead">
+        <div id="selectedLabel" class="selectedLabel">已選取：—</div>
+        <div class="stageTip">（點一下選取，雙指縮放旋轉）</div>
+      </div>
+
+      <div id="stage" class="stage" aria-label="拼貼畫布">
+        <img id="bg" class="bg" alt="背景" />
+        <div id="canvas" class="canvas"></div>
+        <img id="base" class="base" alt="本體" />
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
